@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс с расписанием (состояние с датами)</title>
+
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/fonts.css">
+    <link rel="stylesheet" href="styles/css/header.css">
+    <link rel="stylesheet" href="styles/css/footer.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/schedule.css">
+
+</head>
+<body>
+    <!-- icons -->
+    <svg display="none">
+        <symbol id="telegram" viewBox="0 0 33 29">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.42295 11.5231L27.432 3.17072C28.4443 2.70926 29.3492 3.17072 28.9657 4.70892L25.3768 22.552C25.1007 23.8134 24.3492 24.121 23.2909 23.5365L17.5548 19.2911C16.2051 20.6139 15.3462 21.4445 14.794 21.9675C14.7636 21.9933 14.7344 22.0181 14.7063 22.042C14.2812 22.4032 14.106 22.552 13.6744 22.552C13.2296 22.552 13.0303 22.2752 12.7695 21.5676L10.653 15.0764L5.14688 13.3536C4.25732 13.0613 4.22664 11.8769 5.42295 11.5231ZM24.0745 6.785L11.5439 14.676L13.6758 21.2287L14.2126 16.5372L24.6113 7.15417C24.8874 6.83115 24.688 6.36969 24.0745 6.785Z" />
+        </symbol>
+    </svg>
+    <!-- ------------------------------------------------------------------------------------------------- -->
+
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <img src="img/страдарум-логотип.svg" alt="" class="header__logo">
+                    <!-- disabled not attr, it's class name <a class='header__link disabled'>link</a> -->
+                    <a href="#" class="header__link " >Профиль</a>
+                </div>
+            </div>
+        </header>
+        <main class="schedule main">
+            <div class="container">
+                <div class="schedule__content">
+                    <div class="schedule__tabs">
+                        <a class="schedule__tab" href='/lk.html'>← все курсы</a>
+                    </div>
+                    <div class="schedule__card card ">
+                        <div class="schedule__column schedule__column_first card__column card__column_first">
+                            <p class="schedule__label card__label ">
+                                Курс
+                            </p>
+                            <h3 class="schedule__header card__header ">
+                                Изразец, кирпич, бревно: <br> стили и смыслы русской архитектуры 
+                            </h3>
+                            <div class="schedule__tags card__tags">
+                                <div class="schedule__tag card__tag _in-progress">
+                                    лекции идут
+                                </div>
+                                <div class="schedule__tag card__tag _filled">
+                                    5 лекций
+                                </div>
+                                <div class="schedule__tag card__tag _filled">
+                                    старт: 30 ноября 2022
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__column schedule__column_second card__column card__column_second">
+                            <div class="schedule__img-container card__img-container">
+                                <img src="img/lk-card-img-2.png" alt="" class="schedule__img">
+                            </div>
+                            <div class="schedule__autor card__autor ">
+                                <div class="schedule__autor-container card__autor-container">
+                                    <img src="img/autor-avatar-1.png" alt="" class="schedule__autor-avatar card__autor-avatar">
+                                </div>
+                                Олег Воскобойников
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__buttons">
+                        <a href="#" class="schedule__button"> 
+                            <svg class="schedule__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                            Оповещения
+                        </a>
+                        <a href="#" class="schedule__button">
+                            <svg class="schedule__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                            Чат с куратором
+                        </a>
+                    </div>
+                    <h1 class="schedule__title">
+                        Программа
+                    </h1>
+                   <div class="schedule__program program">
+                        <div class="program__card card">
+                            <div class="programm__column card__column card__column_first">
+                                <div class="program__tags card__tags">
+                                    <div class="program__tag card__tag _stroked">
+                                        1 лекция
+                                    </div>
+                                </div>
+                                <h3 class="program__header card__header">
+                                    Не боги горшки обжигают. Античная живопись 
+                                </h3>
+                                <p class="program__date">
+                                    3 ноября 2022 19:30 по МСК
+                                </p>
+                            </div>
+                            <div class="program__column card__column card__column_second">
+                                <a class="program__button _secondary">
+                                    Смотреть запись →
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="program__line">
+                        <div class="program__card card">
+                            <div class="programm__column card__column card__column_first">
+                                <div class="program__tags card__tags">
+                                    <div class="program__tag card__tag _stroked">
+                                        2 лекция
+                                    </div>
+                                </div>
+                                <h3 class="program__header card__header">
+                                    Небесный Иерусалим на грешной земле. Рождение христианской живописи
+                                </h3>
+                                <p class="program__date">
+                                    3 ноября 2022 19:30 по МСК
+                                </p>
+                            </div>
+                            <div class="program__column card__column card__column_second">
+                                <a class="program__button card__tag _question">
+                                    лекция записана
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="program__line">
+                        <div class="program__card card">
+                            <div class="programm__column card__column card__column_first">
+                                <div class="program__tags card__tags">
+                                    <div class="program__tag card__tag _stroked">
+                                        3 лекция
+                                    </div>
+                                </div>
+                                <h3 class="program__header card__header">
+                                    Верить и видеть: живопись позднего Средневековья
+                                </h3>
+                                <p class="program__date">
+                                    3 ноября 2022 19:30 по МСК
+                                </p>
+                            </div>
+                            <div class="program__column card__column card__column_second">
+                                <a class="program__button _main">
+                                    Zoom → 
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__text">Страдающее Средневековье, 2022</p>
+                    <p class="footer__text">Страдариум, 2022</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

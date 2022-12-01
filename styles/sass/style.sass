@@ -1,0 +1,219 @@
+@import mixins
+    
+body, html
+    height: 100vh
+    width: 100vw
+    
+.page
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.main
+    flex: 1 1 100%
+
+
+.container
+    width: 97.22%
+    margin: 0 auto
+
+.form
+    display: flex
+    flex-direction: column
+    &__input
+        +form_input
+    &__row
+        display: block
+        margin-bottom: 4px
+        width: 100%
+        position: relative
+    &__error
+        display: none
+        +stratos_reg
+        font-size: 12px
+        line-height: 120%
+        color: #FF5841
+        padding-left: 49px
+        margin-top: 9px
+    &__label
+        display: block
+        opacity: 0
+        +stratos_reg    
+        font-size: 12px
+        color: #8D8D8D
+        line-height: 120%
+        position: absolute
+        top: 11px
+        left: 51px    
+        
+    &__button
+        margin-top: 32px
+        +main_button
+    &__description
+        display: block
+        +stratos_reg
+        font-size: 12px
+        line-height: 120%
+        color: #8D8D8D
+        padding-left: 49px
+        margin-top: 9px
+        
+
+
+.card
+    display: flex
+    padding: 24px 0
+    justify-content: space-between
+    cursor: pointer
+    text-decoration: none
+    &:visited
+        color: #000
+        ._stroked
+            color: #000
+    
+    &:hover 
+        .lk__header,
+        .lk__label
+            color: #8D8D8D
+    &.disabled
+        .lk__header,
+        .lk__label,
+        .lk__autor,
+        .lk__tags
+            color: #E8E8E8
+        .lk__tag
+            background: #fff
+            border: 1px solid #E8E8E8
+        ._in-progress,
+        ._record
+            &::before
+                background: #E8E8E8
+    &__column
+        &_first
+            padding-right: 64px
+            flex: 1 1 70%
+            
+
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 5px
+        &-container
+            position: relative
+            height: 100%
+            max-width: 307px
+    
+    &__label
+        +cstm
+        font-size: 20px
+        line-height: 120%
+        color: #000
+        margin-bottom: 24px
+    &__header
+        +stratos_reg
+        font-size: 40px
+        color: #000
+        line-height: 120%
+        margin-bottom: 32px
+        text-decoration: none
+    &__autor
+        display: flex
+        align-items: center
+        +stratos_reg
+        font-size: 24px
+        line-height: 120%
+        color: #000
+        margin-bottom: 24px
+        &-container
+            position: relative
+            padding-top: 44px
+            width: 44px
+            margin-right: 12px
+        &-avatar
+            position: absolute
+            top: 0
+            left: 0
+            border-radius: 50%
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__tags
+        display: flex
+        flex-wrap: wrap
+        margin: -6px
+    &__tag
+        +stratos_reg
+        font-size: 20px
+        line-height: 120%
+        border-radius: 32px
+        padding: 10px 16px
+        position: relative
+        margin: 6px
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 50%
+            left: 18px
+            transform: translateY(-50%)
+            width: 9px
+            height: 9px
+        &._stroked
+            border: 1px solid #000
+        &._in-progress
+            padding-left: 33px
+            background: #DCFFEC
+            border: 1px solid #23DE77
+            &::before
+                border-radius: 50%
+                background: #23DE77
+        &._record
+            padding-left: 35px
+            background: #DAEDFF
+            border: 1px solid #7ABFFF
+            &::before
+                border-radius: 2px
+                background: #7ABFFF
+        &._filled
+            background: #fff
+        &._question
+            display: flex
+            align-items: center
+            padding-right: 16px
+            background: #8D8D8D
+            color: #fff
+            span
+                position: relative
+                margin-left: auto
+                margin-left: 8px
+                &::before
+                    content: ''
+                    display: block
+                    left: auto
+                    right: 16px
+                    width: 20px
+                    height: 20px
+                    background: url('../../img/question.svg') center no-repeat
+
+
+
+
+._mob
+    display: none
+
+
+@media screen and (min-width: 768px) and (max-width: 999px)
+    
+
+@media screen and (max-width: 999px) and (min-width: 319px)
+
+    .form
+        max-width: 100%
+
+    .container
+        width: 94.79%
+        
+
+    ._mob
+        display: block

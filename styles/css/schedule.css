@@ -1,0 +1,151 @@
+.schedule__title {
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  color: #000;
+  font-size: 64px;
+  line-height: 120%;
+}
+.schedule__content {
+  padding-top: 122px;
+}
+.schedule__tabs {
+  display: flex;
+  margin-bottom: 32px;
+}
+.schedule__tab {
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000000;
+  border-radius: 32px;
+  padding: 10px 16px;
+}
+.schedule__tab:hover {
+  transition: all 0.5s;
+  background: #000;
+  color: #fff;
+}
+.schedule__card {
+  background: #EBEBEB;
+  padding: 48px 32px;
+  border-radius: 5px;
+  cursor: default;
+}
+.schedule__column {
+  display: flex;
+  flex-direction: column;
+}
+.schedule__header {
+  font-size: 54px;
+  flex: 1 1 100%;
+}
+.schedule__img-container {
+  height: auto;
+}
+.schedule__autor {
+  display: flex;
+  margin: 60px 0 0 0;
+  justify-content: flex-start;
+}
+.schedule__buttons {
+  display: flex;
+  margin: 32px -1px 48px -1px;
+}
+.schedule__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  color: #000;
+  border: 2px solid #000000;
+  border-radius: 124px;
+  padding: 28px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 120%;
+  cursor: pointer;
+  flex: 1 1 auto;
+  margin: 0 1px;
+}
+.schedule__button svg {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+  fill: #000;
+}
+.schedule__button:hover {
+  transition: all 0.4s;
+  background: #000;
+  color: #fff;
+}
+.schedule__button:hover svg {
+  transition: all 0.4s;
+  fill: #fff;
+}
+
+.program {
+  margin-top: 16px;
+  margin-bottom: 26px;
+}
+.program__date {
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+.program__card {
+  padding: 32px 0;
+  cursor: default;
+}
+.program__line {
+  border: 1px solid #000;
+}
+.program__button {
+  cursor: pointer;
+}
+.program__button._main {
+  display: block;
+  text-align: center;
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  color: #fff;
+  padding: 28px;
+  background: #FF5841;
+  border: none;
+  border-radius: 124px;
+  font-size: 24px;
+  line-height: 120%;
+  transition: background 0.4s;
+}
+.program__button._main:hover {
+  background: #000;
+  cursor: pointer;
+}
+.program__button._main.disabled, .program__button._main:disabled {
+  background: #E8E8E8;
+}
+.program__button._secondary {
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  background: #7ABFFF;
+  color: #fff;
+  padding: 28px;
+  border-radius: 124px;
+  font-size: 24px;
+  line-height: 120%;
+  cursor: pointer;
+}
+.program__button._secondary:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.4s;
+}
+.program__tags {
+  margin-bottom: 16px;
+}/*# sourceMappingURL=schedule.css.map */

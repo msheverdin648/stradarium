@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.header__link {
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: #8D8D8D;
+}
+.header__link.disabled {
+  color: #E8E8E8;
+}/*# sourceMappingURL=header.css.map */

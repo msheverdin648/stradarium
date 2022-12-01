@@ -1,0 +1,155 @@
+
+
+@mixin stratos_reg
+    font-family: 'Stratos LC Web'
+    font-weight: 400
+
+@mixin cstm
+    font-family: 'CSTM Exprmntl 03'
+    
+@mixin title
+    +stratos_reg
+    color: #000
+    font-size: 64px
+    line-height: 120%
+
+
+@mixin form_input
+    +stratos_reg
+    width: 100%
+    font-size: 24px
+    line-height: 120%
+    padding: 20px 49px
+    background: #F9F9F9
+    color: #000
+    border: 1px solid #E8E8E8
+    border-radius: 124px
+    outline: none
+    &::-moz-placeholder
+        color: #000
+        opacity: 1
+    &::-ms-input-placeholder
+        color: #000
+        opacity: 1
+    &::-webkit-input-placeholder
+        color: #000
+        opacity: 1
+    &:last-child
+        margin: 0
+    &:hover
+        border: 1px solid #8D8D8D
+    &:invalid
+        background: #FFF2F0
+        border: 1px solid #FF5841
+    &:invalid + .form__label + .form__error
+        display: block
+    &:focus
+        padding: 27px 49px 14px 49px
+        border: 1px solid #8D8D8D
+    &:focus + .form__label
+        opacity: 1
+        display: block
+    &.disabled
+        background: #F9F9F9
+        border: 1px solid #E8E8E8
+        &::-moz-placeholder
+            color: #E8E8E8
+        &::-ms-input-placeholder
+            color: #E8E8E8
+        &::-webkit-input-placeholder
+            color: #E8E8E8
+
+@mixin main_button
+    display: block
+    text-align: center
+    +stratos_reg
+    color: #fff
+    padding: 28px
+    background: #FF5841
+    border: none
+    border-radius: 124px
+    font-size: 24px
+    line-height: 120%
+    transition: background 0.4s
+    &:hover
+        background: #000
+        cursor: pointer
+    &.disabled,
+    &:disabled
+        background: #E8E8E8
+
+@mixin secondary_button
+    +stratos_reg
+    background: #7ABFFF
+    color: #fff
+    padding: 28px
+    border-radius: 124px
+    font-size: 24px
+    line-height: 120%
+    cursor: pointer
+    &:hover
+        background: #000
+        color: #fff
+        transition: all 0.4s
+    
+
+@mixin stroked_button
+    display: flex
+    align-items: center
+    justify-content: center
+    +stratos_reg
+    color: #000
+    border: 2px solid #000000
+    border-radius: 124px
+    padding: 28px 0
+    text-align: center
+    text-decoration: none
+    font-size: 24px
+    line-height: 120%
+    cursor: pointer
+    svg
+        width: 32px
+        height: 32px
+        margin-right: 24px
+        fill: #000
+    &:hover
+        transition: all 0.4s
+        background: #000
+        color: #fff
+    &:hover
+        svg
+            transition: all 0.4s
+            fill: #fff
+    
+        
+    
+@mixin link
+    color: #000
+    +stratos_reg
+    font-size: 24px
+    text-decoration-color: #E8E8E8
+    line-height: 120%
+    &:visited
+        color: #FF5841
+        text-decoration-color: #FF5841
+    &:hover
+        text-decoration-color: #000
+        transition: text-decoration-color 0.5s
+    &.disabled
+        color: #E8E8E8
+    
+@mixin tab
+    +stratos_reg
+    font-size: 20px
+    line-height: 120%
+    cursor: pointer
+    text-decoration: none
+    color: #000
+    border: 1px solid #000000
+    border-radius: 32px
+    padding: 10px 16px
+    &:hover
+        transition: all 0.5s
+        background: #000
+        color: #fff
+    

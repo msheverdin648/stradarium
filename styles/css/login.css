@@ -1,0 +1,167 @@
+.login__content {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.login__content::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../../img/login-img.png") center no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.login__column {
+  display: flex;
+  flex-direction: column;
+}
+.login__column_first {
+  padding-top: 122px;
+}
+.login__column_second {
+  position: relative;
+  flex: 0 0 48.54%;
+}
+.login__img_360 {
+  display: none;
+}
+.login__img_768 {
+  display: none;
+}
+.login__title {
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  color: #000;
+  font-size: 64px;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+.login__text {
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin: -24px 0 48px 0;
+}
+.login__form {
+  margin-bottom: 32px;
+}
+.login__link {
+  color: #000;
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  font-size: 24px;
+  -webkit-text-decoration-color: #E8E8E8;
+          text-decoration-color: #E8E8E8;
+  line-height: 120%;
+}
+.login__link:visited {
+  color: #FF5841;
+  -webkit-text-decoration-color: #FF5841;
+          text-decoration-color: #FF5841;
+}
+.login__link:hover {
+  -webkit-text-decoration-color: #000;
+          text-decoration-color: #000;
+  transition: -webkit-text-decoration-color 0.5s;
+  transition: text-decoration-color 0.5s;
+  transition: text-decoration-color 0.5s, -webkit-text-decoration-color 0.5s;
+}
+.login__link.disabled {
+  color: #E8E8E8;
+}
+.login .container {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1470px) {
+  .login__form {
+    max-width: 490px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1160px) {
+  .login__content::before {
+    background: url("../../img/login-img-1024.png") center no-repeat;
+    background-position: 100% 0;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 999px) {
+  .login {
+    margin-bottom: 32px;
+  }
+  .login__content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .login__content::before {
+    top: 100%;
+    background: url("../../img/login-img-768.png") no-repeat;
+  }
+  .login__link {
+    margin-bottom: 48px;
+  }
+  .login__title {
+    font-size: 46px;
+  }
+  .login__img {
+    width: 100%;
+    opacity: 0;
+  }
+  .login__img_360 {
+    display: inline-block;
+  }
+  .login__img_768 {
+    display: none;
+  }
+  .login .container {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 360px) {
+  .login {
+    margin-bottom: 32px;
+  }
+  .login::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url("../../img/login-img-360.png") no-repeat;
+    background-position: 100% 100%;
+    height: 100%;
+    width: 100%;
+  }
+  .login__content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .login__content::before {
+    display: none;
+  }
+  .login__column_second {
+    position: relative;
+  }
+  .login__link {
+    margin-bottom: 48px;
+  }
+  .login__title {
+    font-size: 46px;
+  }
+  .login__img {
+    width: 100%;
+    opacity: 0;
+  }
+  .login__img_360 {
+    display: inline-block;
+  }
+  .login__img_768 {
+    display: none;
+  }
+  .login .container {
+    height: 100%;
+  }
+}/*# sourceMappingURL=login.css.map */

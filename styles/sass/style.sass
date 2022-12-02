@@ -14,8 +14,9 @@ body, html
 
 
 .container
-    width: 97.22%
-    margin: 0 auto
+    width: 100%
+    // margin: 0 20px
+    padding: 0 20px
 
 .form
     display: flex
@@ -92,7 +93,8 @@ body, html
         &_first
             padding-right: 64px
             flex: 1 1 70%
-            
+        &_second
+            min-width: 177px            
 
     &__img
         width: 100%
@@ -142,6 +144,8 @@ body, html
         display: flex
         flex-wrap: wrap
         margin: -6px
+        &:visited
+            color: #000
     &__tag
         +stratos_reg
         font-size: 20px
@@ -214,6 +218,7 @@ body, html
     font-size: 12px
     line-height: 120%
     cursor: default
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
     &.active
         z-index: 1
         opacity: 1
@@ -245,7 +250,62 @@ body, html
     display: none
 
 
-@media screen and (min-width: 768px) and (max-width: 999px)
+@media screen and (max-width: 769px)
+    .card
+        flex-direction: column
+        &__header
+            font-size: 24px
+        &__label
+            font-size: 14px
+        &__autor
+            font-size: 18px
+            &-container
+                padding-top: 32px
+                width: 32px
+        &__tag
+            font-size: 14px
+
+@media screen and ( max-width: 769px ) and (min-width: 519px)
+    .tooltip
+        top: 50%
+        transform: translate(110%, -50%)
+        &::after
+            right: auto
+            bottom: auto
+            top: 50%
+            left: 0
+            transform: translate(-100%, -50%)
+            border-top: 11px solid transparent
+            border-right: 11px solid #000
+    
+@media screen and ( max-width: 361px  )
+
+    .tooltip
+        right: auto
+        left: 0
+        min-width: 190px
+        transform: translateY(-120%)
+        &__cross
+            &_container
+                width: 30%
+                height: 50%
+        &::after
+            transform: translate(-150%, 100%)
+    
+
+@media screen and (max-width: 361px)
+    .card
+        &__column
+            &_first
+                order: 2
+                padding: 0
+            &_second
+                order: 1
+                margin-bottom: 24px
+        &__img
+            &-container
+                max-width: 100%
+            
     
 
 @media screen and (max-width: 999px) and (min-width: 319px)
@@ -253,9 +313,7 @@ body, html
     .form
         max-width: 100%
 
-    .container
-        width: 94.79%
-        
-
     ._mob
         display: block
+    ._pc 
+        display: none

@@ -44,6 +44,11 @@
   font-size: 54px;
   flex: 1 1 100%;
 }
+.schedule__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 .schedule__img-container {
   height: auto;
 }
@@ -139,6 +144,7 @@
   background: #7ABFFF;
   color: #fff;
   padding: 28px;
+  display: flex;
   border-radius: 124px;
   font-size: 24px;
   line-height: 120%;
@@ -152,4 +158,65 @@
 }
 .program__tags {
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 769px) {
+  .schedule__title {
+    font-size: 32px;
+  }
+  .schedule__header {
+    font-size: 32px;
+  }
+  .schedule__column_first {
+    order: 2;
+  }
+  .schedule__column_second {
+    order: 1;
+    margin-bottom: 24px;
+  }
+  .schedule__autor {
+    margin-top: 24px;
+  }
+  .schedule__img-container {
+    max-width: 272px;
+  }
+  .schedule__tab {
+    font-size: 14px;
+  }
+  .program__card {
+    align-items: flex-start;
+  }
+  .program__date {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .schedule__buttons {
+    flex-direction: column;
+  }
+  .schedule__button {
+    margin-bottom: 2px;
+  }
+  .program__column_first {
+    order: 1;
+  }
+  .program__column_second {
+    order: 2;
+  }
+}
+@media screen and (max-width: 321px) {
+  .schedule__autor {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 999px) and (min-width: 319px) {
+  .form {
+    max-width: 100%;
+  }
+  ._mob {
+    display: flex;
+  }
+  ._pc {
+    display: none;
+  }
 }/*# sourceMappingURL=schedule.css.map */

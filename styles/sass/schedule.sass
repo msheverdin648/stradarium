@@ -22,6 +22,8 @@
         font-size: 54px
         flex: 1 1 100%
     &__img
+        object-fit: cover
+        width: 100%
         &-container
             height: auto
     &__autor
@@ -58,3 +60,65 @@
             +secondary_button
     &__tags
         margin-bottom: 16px
+
+
+@media screen and (max-width: 769px)
+
+    .schedule
+        &__title
+            font-size: 32px
+        &__header
+            font-size: 32px
+        &__column
+            &_first
+                order: 2
+            &_second
+                order: 1
+                margin-bottom: 24px
+        &__autor
+            margin-top: 24px
+        &__img
+            &-container
+                max-width: 272px
+        &__tab
+            font-size: 14px
+
+
+    .program
+        &__card
+            align-items: flex-start
+        &__date
+            margin-bottom: 20px
+
+@media screen and ( max-width: 361px )
+
+    .schedule
+        &__buttons
+            flex-direction: column
+        &__button
+            margin-bottom: 2px
+    
+    .program
+        &__column
+            &_first
+                order: 1
+            &_second
+                order: 2
+    
+@media screen and ( max-width: 321px )
+
+    .schedule
+        &__autor
+            font-size: 17px
+    
+
+
+@media screen and (max-width: 999px) and (min-width: 319px)
+
+    .form
+        max-width: 100%
+
+    ._mob
+        display: flex
+    ._pc 
+        display: none

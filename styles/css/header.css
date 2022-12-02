@@ -24,4 +24,10 @@
 }
 .header__link.disabled {
   color: #E8E8E8;
+}
+
+@media screen and (max-width: 361px) {
+  .header__link {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=header.css.map */

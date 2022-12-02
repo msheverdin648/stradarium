@@ -13,4 +13,10 @@
 }
 .lk__line {
   border: 1px solid #000;
+}
+
+@media screen and (max-width: 768px) {
+  .lk__title {
+    font-size: 46px;
+  }
 }/*# sourceMappingURL=lk.css.map */

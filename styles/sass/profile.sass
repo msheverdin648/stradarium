@@ -1,9 +1,9 @@
 @import mixins
 
 .page
-    background: url('../../img/profile-img.png') center no-repeat
-    background-size: auto 100%
-    background-position: 100% 0
+    background: url('../../img/line.png') no-repeat
+    background-size: auto 1500px
+    background-position: 90% 0
 
 .profile
     padding-top: 122px
@@ -31,12 +31,100 @@
             flex: 1 1 50%
         &_second
             flex: 1 1 50%
+            display: flex
+            flex-direction: column
+            align-items: flex-end
     &__body
         display: flex
     &__img
+        min-width: 80%
+        transform: rotate(8.87deg)
         &_768,
         &_360
             display: none
+
+@media screen and ( min-width: 1500px )
     
+    .page
+        background-position: 80% 0
+
+@media screen and ( max-width: 1279px )
+
+    .page
+        background-position: 90% 0
+        background-size: 45% 1500px
+    
+    
+
+
+@media screen and ( max-width: 1025px )
+
+    .page
+        background-size: 50% 1500px
+
+    .profile
+        &__column
+            &_second
+        &__img
+    
+
+
+
+@media screen and (max-width: 1010px)
+
+    .page
+        background: url('../../img/profile-img-768.png') center no-repeat
+        background-size: 100% 661px
+        background-position: 0% 90%
+
+    .profile
+        &__body
+            flex-direction: column
+        &__column
+            &_first
+                margin-bottom: 32px
+            &_second
+                align-items: normal
+        &__img
+            display: block
+            opacity: 0
+            z-index: -1
+                
+@media screen and ( max-width:  769px)
+
+    .page
+        background-size: 100% 551px
+
+    .profile
+        &__title
+            font-size: 46px
+        &__text
+            font-size: 24px
+        &__tab
+            font-size: 14px
+    
+@media screen and ( max-width:  679px)
+
+    .page
+        background-size: 100% 501px
+    
+@media screen and ( max-width:  512px)
+
+    .page
+        background-size: 100% 400px
+
+
+@media screen and ( max-width:  480px)
+    .page
+        background-size: 100% 333px
+
+@media screen and ( max-width: 376px )
+
+    .page
+        background-size: 100% 264px
+    
+    
+    
+
 
 

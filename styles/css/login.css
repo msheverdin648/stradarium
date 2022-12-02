@@ -4,26 +4,23 @@
   background-position: 100% 0;
 }
 
+.login {
+  padding-top: 122px;
+  padding-bottom: 60px;
+}
 .login__content {
   display: flex;
   justify-content: space-between;
-  min-height: 100%;
 }
 .login__column {
   display: flex;
   flex-direction: column;
 }
-.login__column_first {
-  padding-top: 122px;
-}
 .login__column_second {
   position: relative;
   flex: 0 0 48.54%;
 }
-.login__img_360 {
-  display: none;
-}
-.login__img_768 {
+.login__img {
   display: none;
 }
 .login__title {
@@ -68,9 +65,6 @@
 .login__link.disabled {
   color: #E8E8E8;
 }
-.login .container {
-  height: 100vh;
-}
 
 @media screen and (max-width: 1470px) {
   .login__form {
@@ -78,84 +72,85 @@
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1160px) {
-  .login__content::before {
+  .page {
     background: url("../../img/login-img-1024.png") center no-repeat;
     background-position: 100% 0;
+    background-size: 50% 100%;
   }
 }
-@media screen and (min-width: 361px) and (max-width: 999px) {
-  .login {
-    margin-bottom: 32px;
-  }
-  .login__content {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .login__content::before {
-    top: 100%;
-    background: url("../../img/login-img-768.png") no-repeat;
-  }
-  .login__link {
-    margin-bottom: 48px;
-  }
-  .login__title {
-    font-size: 46px;
-  }
-  .login__img {
-    width: 100%;
-    opacity: 0;
-  }
-  .login__img_360 {
-    display: inline-block;
-  }
-  .login__img_768 {
-    display: none;
-  }
-  .login .container {
-    height: 100%;
+@media screen and (max-width: 769px) {
+  .page {
+    background: url("../../img/login-img-mob.png") center no-repeat;
+    background-position: 0% 90%;
+    background-size: 100% 658px;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 360px) {
-  .login {
-    margin-bottom: 32px;
+@media screen and (max-width: 1010px) {
+  .page {
+    background: url("../../img/login-img-mob.png") center no-repeat;
+    background-size: 100% 661px;
+    background-position: 0% 90%;
   }
-  .login::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background: url("../../img/login-img-360.png") no-repeat;
-    background-position: 100% 100%;
-    height: 100%;
-    width: 100%;
-  }
-  .login__content {
+  .login__body {
     flex-direction: column;
-    justify-content: flex-start;
   }
-  .login__content::before {
-    display: none;
+  .login__column_first {
+    margin-bottom: 32px;
   }
   .login__column_second {
-    position: relative;
+    align-items: normal;
   }
-  .login__link {
-    margin-bottom: 48px;
+  .login__img {
+    display: block;
+    opacity: 0;
+    z-index: -1;
+  }
+  .login__content {
+    flex-direction: column;
   }
   .login__title {
     font-size: 46px;
   }
-  .login__img {
-    width: 100%;
-    opacity: 0;
+  .login__text {
+    font-size: 24px;
   }
-  .login__img_360 {
-    display: inline-block;
+  .login__tab {
+    font-size: 14px;
   }
-  .login__img_768 {
-    display: none;
+  .login__form {
+    max-width: 100%;
   }
-  .login .container {
-    height: 100%;
+  .login__column_first {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  .page {
+    background-size: 100% 551px;
+  }
+}
+@media screen and (max-width: 679px) {
+  .page {
+    background-size: 100% 501px;
+  }
+}
+@media screen and (max-width: 512px) {
+  .page {
+    background-size: 100% 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page {
+    background-size: 100% 333px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .page {
+    background-size: 100% 264px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .login__title {
+    word-wrap: anywhere;
   }
 }/*# sourceMappingURL=login.css.map */

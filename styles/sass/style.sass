@@ -8,6 +8,7 @@ body, html
     display: flex
     flex-direction: column
     min-height: 100%
+    overflow: hidden
 
 .main
     flex: 1 1 100%
@@ -185,18 +186,23 @@ body, html
         &._question
             display: flex
             align-items: center
-            padding-right: 16px
+            padding-right: 44px
             background: #8D8D8D
             color: #fff
             span
-                position: relative
+                position: absolute
+                right: 16px
+                height: 100%
+                width: 30px
                 margin-left: auto
-                margin-left: 8px
                 &::before
                     content: ''
                     display: block
+                    position: absolute
                     left: auto
-                    right: 16px
+                    right: 0
+                    top: 50%
+                    transform: translateY(-50%)
                     width: 20px
                     height: 20px
                     background: url('../../img/question.svg') center no-repeat
@@ -264,6 +270,12 @@ body, html
                 width: 32px
         &__tag
             font-size: 14px
+
+    .form
+        &__input
+            font-size: 18px
+        &__button
+            font-size: 18px
 
 @media screen and ( max-width: 769px ) and (min-width: 519px)
     .tooltip

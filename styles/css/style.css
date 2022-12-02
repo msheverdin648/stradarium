@@ -7,6 +7,7 @@ body, html {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  overflow: hidden;
 }
 
 .main {
@@ -291,20 +292,25 @@ body, html {
 .card__tag._question {
   display: flex;
   align-items: center;
-  padding-right: 16px;
+  padding-right: 44px;
   background: #8D8D8D;
   color: #fff;
 }
 .card__tag._question span {
-  position: relative;
+  position: absolute;
+  right: 16px;
+  height: 100%;
+  width: 30px;
   margin-left: auto;
-  margin-left: 8px;
 }
 .card__tag._question span::before {
   content: "";
   display: block;
+  position: absolute;
   left: auto;
-  right: 16px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 20px;
   height: 20px;
   background: url("../../img/question.svg") center no-repeat;
@@ -380,6 +386,12 @@ body, html {
   }
   .card__tag {
     font-size: 14px;
+  }
+  .form__input {
+    font-size: 18px;
+  }
+  .form__button {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 769px) and (min-width: 519px) {

@@ -23,3 +23,14 @@ tooltips.forEach(el => {
         el.classList.remove('active')
     }.bind(el))
 })
+
+
+
+//only for demostration navigation
+
+const button = document.querySelector('.login__button')
+
+button.addEventListener('click', e => {
+    e.preventDefault()
+    location.href = '/lk.html'
+})

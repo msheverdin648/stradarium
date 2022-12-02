@@ -22,6 +22,7 @@
   color: #000;
   border: 1px solid #000000;
   border-radius: 32px;
+  background: #fff;
   padding: 10px 16px;
 }
 .schedule__tab:hover {
@@ -57,6 +58,7 @@
 }
 .schedule__button {
   display: flex;
+  text-decoration: none;
   align-items: center;
   justify-content: center;
   font-family: "Stratos LC Web";
@@ -122,6 +124,7 @@
   font-size: 24px;
   line-height: 120%;
   transition: background 0.4s;
+  text-decoration: none;
 }
 .program__button._main:hover {
   background: #000;
@@ -140,6 +143,7 @@
   font-size: 24px;
   line-height: 120%;
   cursor: pointer;
+  text-decoration: none;
 }
 .program__button._secondary:hover {
   background: #000;

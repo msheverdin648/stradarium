@@ -1,0 +1,42 @@
+@import mixins
+
+.page
+    background: url('../../img/profile-img.png') center no-repeat
+    background-size: auto 100%
+    background-position: 100% 0
+
+.profile
+    padding-top: 122px
+    padding-bottom: 60px
+    
+    &__content
+    &__title
+        +title
+        margin-bottom: 24px
+    &__text
+        +stratos_reg
+        font-size: 40px
+        line-height: 120%
+        margin-bottom: 48px
+    &__link
+        +link
+    &__tabs
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 32px
+    &__tab
+        +tab
+    &__column
+        &_first
+            flex: 1 1 50%
+        &_second
+            flex: 1 1 50%
+    &__body
+        display: flex
+    &__img
+        &_768,
+        &_360
+            display: none
+    
+
+

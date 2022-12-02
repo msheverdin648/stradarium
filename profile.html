@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/fonts.css">
+    <link rel="stylesheet" href="styles/css/header.css">
+    <link rel="stylesheet" href="styles/css/footer.css">
+    <link rel="stylesheet" href="styles/css/profile.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <img src="img/страдарум-логотип.svg" alt="" class="header__logo">
+                    <!-- disabled not attr, it's class name <a class='header__link disabled'>link</a> -->
+                    <a href="#" class="header__link " >Профиль</a>
+                </div>
+            </div>
+        </header>
+        <main class="profile main">
+            <div class="container">
+                <div class="profile__content">
+                    <div class="profile__tabs">
+                        <button onclick="history.back()" class="profile__tab">
+                            ← назад
+                        </button>
+                    </div>
+                    <div class="profile__body">
+                        <div class="profile__column profile__column_first">
+                            <h1 class="profile__title">
+                                Мой профиль:
+                            </h1>
+                            <p class="profile__text">test123456@gmail.com</p>
+                            <p class="profile__text">Изменить пароль</p>
+                            <form class="profile__form form">
+                                <div class="profile__row form__row">
+                                    <input type="password" class="profile__input form__input" placeholder="текущий пароль">
+                                    <label for="" class="profile__label form__label">текущий пароль</label>
+                                    <span class="profile__error form__error">Пароль неверный</span>
+                                </div>
+                                <div class="profile__row form__row">
+                                    <input type="password" class="profile__input form__input" placeholder="новый пароль">
+                                    <label for="" class="profile__label form__label">новый пароль</label>
+                                    <span class="profile__error form__error"> Пароль неверный </span>
+                                </div>
+                                <div class="profile__row form__row">
+                                    <input type="password" class="profile__input form__input" placeholder="повторите новый пароль">
+                                    <label for="" class="profile__label form__label">повторите новый пароль</label>
+                                    <span class="profile__error form__error"> Пароль неверный </span>
+                                </div>
+                                <button class="profile__button form__button">
+                                    Сохранить
+                                </button>
+                            </form>
+                        </div>
+                        <div class="profile__column profile__column_second">
+                            <img src="img/profile-img-768.png" alt="" class="profile__img profile__img_768">
+                            <img src="img/profile-img-360.png" alt="" class="profile__img profile__img_360">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__text">Страдающее Средневековье, 2022</p>
+                    <p class="footer__text">Страдариум, 2022</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -21,6 +21,11 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.42295 11.5231L27.432 3.17072C28.4443 2.70926 29.3492 3.17072 28.9657 4.70892L25.3768 22.552C25.1007 23.8134 24.3492 24.121 23.2909 23.5365L17.5548 19.2911C16.2051 20.6139 15.3462 21.4445 14.794 21.9675C14.7636 21.9933 14.7344 22.0181 14.7063 22.042C14.2812 22.4032 14.106 22.552 13.6744 22.552C13.2296 22.552 13.0303 22.2752 12.7695 21.5676L10.653 15.0764L5.14688 13.3536C4.25732 13.0613 4.22664 11.8769 5.42295 11.5231ZM24.0745 6.785L11.5439 14.676L13.6758 21.2287L14.2126 16.5372L24.6113 7.15417C24.8874 6.83115 24.688 6.36969 24.0745 6.785Z" />
         </symbol>
     </svg>
+    <svg display="none">
+        <symbol id="cross" viewBox="0 0 8 8">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.14645 0.146447C7.34171 -0.0488155 7.65829 -0.0488155 7.85355 0.146447C8.04882 0.341709 8.04882 0.658291 7.85355 0.853553L4.70711 4L7.85355 7.14645C8.04882 7.34171 8.04882 7.65829 7.85355 7.85355C7.65829 8.04882 7.34171 8.04882 7.14645 7.85355L4 4.70711L0.853553 7.85355C0.658291 8.04882 0.341709 8.04882 0.146447 7.85355C-0.0488156 7.65829 -0.0488156 7.34171 0.146447 7.14645L3.29289 4L0.146447 0.853553C-0.0488154 0.658291 -0.0488154 0.341709 0.146447 0.146447C0.341709 -0.0488155 0.658291 -0.0488155 0.853554 0.146447L4 3.29289L7.14645 0.146447Z"/>
+        </symbol>
+    </svg>
     <!-- ------------------------------------------------------------------------------------------------- -->
 
     <div class="page">
@@ -29,7 +34,7 @@
                 <div class="header__content">
                     <img src="img/страдарум-логотип.svg" alt="" class="header__logo">
                     <!-- disabled not attr, it's class name <a class='header__link disabled'>link</a> -->
-                    <a href="#" class="header__link " >Профиль</a>
+                    <a href="profile.html" class="header__link " >Профиль</a>
                 </div>
             </div>
         </header>
@@ -104,7 +109,7 @@
                                 </p>
                             </div>
                             <div class="program__column card__column card__column_second">
-                                <a class="program__button _secondary">
+                                <a  href="#" class="program__button _secondary">
                                     Смотреть запись →
                                 </a>
                             </div>
@@ -125,9 +130,17 @@
                                 </p>
                             </div>
                             <div class="program__column card__column card__column_second">
-                                <a class="program__button card__tag _question">
+                                <a href="#" class="program__button card__tag _question">
                                     лекция записана
                                     <span></span>
+                                    <div class="tooltip">
+                                        <div class="tooltip__cross_container">
+                                            <svg class="tooltip__cross">
+                                                <use xlink:href="#cross"></use>
+                                            </svg>
+                                        </div>
+                                        Трансляция записана и появится в личном кабинете в течение 3 дней вместе с дополнительными материалами
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -147,7 +160,7 @@
                                 </p>
                             </div>
                             <div class="program__column card__column card__column_second">
-                                <a class="program__button _main">
+                                <a href="#" class="program__button _main">
                                     Zoom → 
                                 </a>
                             </div>
@@ -165,5 +178,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

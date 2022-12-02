@@ -71,6 +71,8 @@
     font-size: 24px
     line-height: 120%
     transition: background 0.4s
+    text-decoration: none
+
     &:hover
         background: #000
         cursor: pointer
@@ -83,10 +85,13 @@
     background: #7ABFFF
     color: #fff
     padding: 28px
+    
     border-radius: 124px
     font-size: 24px
     line-height: 120%
     cursor: pointer
+    text-decoration: none
+
     &:hover
         background: #000
         color: #fff
@@ -95,6 +100,7 @@
 
 @mixin stroked_button
     display: flex
+    text-decoration: none
     align-items: center
     justify-content: center
     +stratos_reg
@@ -147,6 +153,7 @@
     color: #000
     border: 1px solid #000000
     border-radius: 32px
+    background: #fff
     padding: 10px 16px
     &:hover
         transition: all 0.5s

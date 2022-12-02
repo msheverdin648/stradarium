@@ -12,6 +12,10 @@ questionButtons.forEach(el => {
 // Close tooltip listener
 const tooltips = document.querySelectorAll('.tooltip')
 tooltips.forEach(el => {
+    //Clear tooltip from default link events
+    el.addEventListener('click', e => {
+        e.preventDefault()
+    })
     const cross = el.children[0]
     cross.addEventListener('click', function(e){
         e.preventDefault()

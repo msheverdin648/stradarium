@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс с расписанием (состояние с датами)</title>
+
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/fonts.css">
+    <link rel="stylesheet" href="styles/css/header.css">
+    <link rel="stylesheet" href="styles/css/footer.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/video.css">
+
+</head>
+<body>
+    <!-- icons -->
+    <svg display="none">
+        <symbol id="telegram" viewBox="0 0 33 29">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.42295 11.5231L27.432 3.17072C28.4443 2.70926 29.3492 3.17072 28.9657 4.70892L25.3768 22.552C25.1007 23.8134 24.3492 24.121 23.2909 23.5365L17.5548 19.2911C16.2051 20.6139 15.3462 21.4445 14.794 21.9675C14.7636 21.9933 14.7344 22.0181 14.7063 22.042C14.2812 22.4032 14.106 22.552 13.6744 22.552C13.2296 22.552 13.0303 22.2752 12.7695 21.5676L10.653 15.0764L5.14688 13.3536C4.25732 13.0613 4.22664 11.8769 5.42295 11.5231ZM24.0745 6.785L11.5439 14.676L13.6758 21.2287L14.2126 16.5372L24.6113 7.15417C24.8874 6.83115 24.688 6.36969 24.0745 6.785Z" />
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol id="download" viewBox="0 0 24 25">
+            <path d="M10.9531 3C10.9531 2.58579 11.2889 2.25 11.7031 2.25C12.1173 2.25 12.4531 2.58579 12.4531 3H10.9531ZM12.2335 16.7839C11.9406 17.0768 11.4657 17.0768 11.1728 16.7839L6.39982 12.0109C6.10693 11.718 6.10693 11.2432 6.39982 10.9503C6.69272 10.6574 7.16759 10.6574 7.46048 10.9503L11.7031 15.1929L15.9458 10.9503C16.2387 10.6574 16.7135 10.6574 17.0064 10.9503C17.2993 11.2432 17.2993 11.718 17.0064 12.0109L12.2335 16.7839ZM12.4531 3L12.4531 16.2536H10.9531L10.9531 3H12.4531Z"/>
+            <path d="M2 22.0037H21.4063"  stroke-width="1.5" stroke-linecap="round"/>
+        </symbol>
+    </svg>
+
+
+    <!--  -------------------------------------------------------------------------------------------------- -->
+
+
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <img src="img/страдарум-логотип.svg" alt="" class="header__logo">
+                    <!-- disabled not attr, it's class name <a class='header__link disabled'>link</a> -->
+                    <a href="profile.html" class="header__link " >Профиль</a>
+                </div>
+            </div>
+        </header>
+        <main class="video main">
+            <div class="container">
+                <div class="video__content">
+                    <div class="video__tabs">
+                        <a href="lk.html" class="video__tab">← все курсы</a>
+                    </div>
+                    <div class="video__block">
+                        <p class="video__date">Запись от 30 ноября 2022</p>
+                        <h2 class="video__title">1. Не боги горшки обжигают. Античная живопись </h2>
+                    </div>
+                    <div class="video__container">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-R0UYHS8A_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video__block">
+                        <h2 class="video__title">Описание</h2>
+                        <p class="video__text">Лекция посвящена, во-первых, основным этапам развития и выразительным средствам греческой вазописи, во-вторых, монументальной живописи греко-римского мира рубежа эр, известной нам, прежде всего, по раскопкам Помпей и нескольких других городов.</p>
+                    </div>
+                    <div class="video__block">
+                        <h2 class="video__title">Доп. материалы</h2>
+                        <div class="video__row download">
+                        <p class="video__download_text download__text">презентация</p>
+                            <a href="#" >
+                                <svg class="video__download download__icon">
+                                    <use xlink:href="#download"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__text">Страдающее Средневековье, 2022</p>
+                    <p class="footer__text">Страдариум, 2022</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

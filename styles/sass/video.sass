@@ -1,0 +1,78 @@
+@import mixins
+    
+.video
+    padding-top: 122px
+    padding-bottom: 60px
+    &__tabs
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 48px
+    &__tab
+        +tab
+    &__title
+        +title
+        margin-bottom: 24px
+    &__block
+        margin-bottom: 64px
+    &__date
+        +stratos_reg
+        font-size: 24px
+        line-height: 120%
+        margin-bottom: 16px
+    &__text
+        +stratos_reg
+        font-size: 24px
+        line-height: 120%
+    &__container
+        height: 646px
+        margin-bottom: 64px
+
+
+@media screen and ( max-width: 1025px )
+    
+    .video
+        &__container
+            height: 485px
+
+@media screen and ( max-width: 768px )
+
+    .video
+        &__title
+            font-size: 32px
+            margin-bottom: 16px
+        &__text
+            font-size: 18px
+        &__date
+            font-size: 18px
+        &__block
+            margin-bottom: 28px
+        &__container
+            height: 411px
+            margin-bottom: 28px
+
+
+@media screen and ( max-width: 551px )
+    
+    .video
+        &__container
+            height: 280px
+
+@media screen and ( max-width: 480px )
+    
+    .video
+        &__container
+            height: 250px
+
+    @media screen and ( max-width: 390px )
+    
+    .video
+        &__container
+            height: 220px
+
+
+        
+@media screen and ( max-width: 360px )
+    
+    .video
+        &__container
+            height: 195px

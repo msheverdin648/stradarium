@@ -4,6 +4,7 @@
   color: #000;
   font-size: 64px;
   line-height: 120%;
+  margin-top: 48px;
 }
 .schedule__content {
   padding-top: 122px;
@@ -29,6 +30,11 @@
   transition: all 0.5s;
   background: #000;
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .schedule__tab {
+    font-size: 14px;
+  }
 }
 .schedule__card {
   background: #EBEBEB;
@@ -59,7 +65,7 @@
 }
 .schedule__buttons {
   display: flex;
-  margin: 32px -1px 48px -1px;
+  margin: 32px -1px 0 -1px;
 }
 .schedule__button {
   display: flex;
@@ -94,6 +100,11 @@
 .schedule__button:hover svg {
   transition: all 0.4s;
   fill: #fff;
+}
+@media screen and (max-width: 769px) {
+  .schedule__button {
+    font-size: 18px;
+  }
 }
 
 .program {
@@ -138,6 +149,11 @@
 .program__button._main.disabled, .program__button._main:disabled {
   background: #E8E8E8;
 }
+@media screen and (max-width: 769px) {
+  .program__button._main {
+    font-size: 18px;
+  }
+}
 .program__button._secondary {
   font-family: "Stratos LC Web";
   font-weight: 400;
@@ -156,8 +172,17 @@
   color: #fff;
   transition: all 0.4s;
 }
+@media screen and (max-width: 769px) {
+  .program__button._secondary {
+    font-size: 18px;
+  }
+}
 .program__tags {
   margin-bottom: 16px;
+}
+
+._mob {
+  display: none;
 }
 
 @media screen and (max-width: 769px) {
@@ -189,12 +214,10 @@
   .program__date {
     margin-bottom: 20px;
   }
-}
-@media screen and (max-width: 361px) {
-  .schedule__buttons {
+  .program__buttons {
     flex-direction: column;
   }
-  .schedule__button {
+  .program__button {
     margin-bottom: 2px;
   }
   .program__column_first {
@@ -202,6 +225,14 @@
   }
   .program__column_second {
     order: 2;
+  }
+}
+@media screen and (max-width: 580px) {
+  .schedule__buttons {
+    flex-direction: column;
+  }
+  .schedule__button {
+    margin-bottom: 2px;
   }
 }
 @media screen and (max-width: 321px) {

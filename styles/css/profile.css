@@ -47,6 +47,15 @@
 .profile__link.disabled {
   color: #E8E8E8;
 }
+@media screen and (max-width: 769px) {
+  .profile__link:hover {
+    -webkit-text-decoration-color: #FF5841;
+            text-decoration-color: #FF5841;
+    transition: -webkit-text-decoration-color 0s;
+    transition: text-decoration-color 0s;
+    transition: text-decoration-color 0s, -webkit-text-decoration-color 0s;
+  }
+}
 .profile__tabs {
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +78,11 @@
   transition: all 0.5s;
   background: #000;
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .profile__tab {
+    font-size: 14px;
+  }
 }
 .profile__column_first {
   flex: 1 1 50%;

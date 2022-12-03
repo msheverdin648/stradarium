@@ -65,6 +65,15 @@
 .login__link.disabled {
   color: #E8E8E8;
 }
+@media screen and (max-width: 769px) {
+  .login__link:hover {
+    -webkit-text-decoration-color: #FF5841;
+            text-decoration-color: #FF5841;
+    transition: -webkit-text-decoration-color 0s;
+    transition: text-decoration-color 0s;
+    transition: text-decoration-color 0s, -webkit-text-decoration-color 0s;
+  }
+}
 
 @media screen and (max-width: 1470px) {
   .login__form {
@@ -126,7 +135,7 @@
 }
 @media screen and (max-width: 769px) {
   .page {
-    background-size: 100% 551px;
+    background-size: 100% 648px;
   }
 }
 @media screen and (max-width: 679px) {
@@ -141,12 +150,12 @@
 }
 @media screen and (max-width: 480px) {
   .page {
-    background-size: 100% 333px;
+    background-size: 100% 365px;
   }
 }
 @media screen and (max-width: 376px) {
   .page {
-    background-size: 100% 264px;
+    background-size: 100% 320px;
   }
 }
 @media screen and (max-width: 350px) {

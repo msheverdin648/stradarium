@@ -30,4 +30,7 @@
   .header__link {
     font-size: 18px;
   }
+  .header__link:hover {
+    color: #000;
+  }
 }/*# sourceMappingURL=header.css.map */

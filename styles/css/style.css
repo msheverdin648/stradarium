@@ -65,6 +65,18 @@ body, html {
   padding: 27px 49px 14px 49px;
   border: 1px solid #8D8D8D;
 }
+.form__input:focus::-moz-placeholder {
+  color: #000;
+  opacity: 0;
+}
+.form__input:focus::-ms-input-placeholder {
+  color: #000;
+  opacity: 0;
+}
+.form__input:focus::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0;
+}
 .form__input:focus + .form__label {
   opacity: 1;
   display: block;
@@ -133,6 +145,11 @@ body, html {
 .form__button.disabled, .form__button:disabled {
   background: #E8E8E8;
 }
+@media screen and (max-width: 769px) {
+  .form__button {
+    font-size: 18px;
+  }
+}
 .form__description {
   display: block;
   font-family: "Stratos LC Web";
@@ -161,13 +178,13 @@ body, html {
 .card:hover .lk__label {
   color: #8D8D8D;
 }
-.card.disabled .lk__header,
-.card.disabled .lk__label,
-.card.disabled .lk__autor,
-.card.disabled .lk__tags {
+.card.disabled .card__header,
+.card.disabled .card__label,
+.card.disabled .card__autor,
+.card.disabled .card__tags {
   color: #E8E8E8;
 }
-.card.disabled .lk__tag {
+.card.disabled .card__tag {
   background: #fff;
   border: 1px solid #E8E8E8;
 }
@@ -283,7 +300,7 @@ body, html {
   border: 1px solid #7ABFFF;
 }
 .card__tag._record::before {
-  border-radius: 2px;
+  border-radius: 50%;
   background: #7ABFFF;
 }
 .card__tag._filled {
@@ -363,6 +380,30 @@ body, html {
   border-top: 11px solid #000;
 }
 
+.download {
+  display: flex;
+  align-items: center;
+}
+.download:hover .download__text {
+  color: #8D8D8D;
+}
+.download:hover .download__icon {
+  fill: #8D8D8D;
+  stroke: #8D8D8D;
+}
+.download__icon {
+  width: 24px;
+  height: 24px;
+  stroke: #000;
+}
+.download__text {
+  flex: 1 1 100%;
+  font-family: "Stratos LC Web";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
 ._mob {
   display: none;
 }
@@ -370,6 +411,10 @@ body, html {
 @media screen and (max-width: 769px) {
   .card {
     flex-direction: column;
+  }
+  .card:hover .card__header,
+.card:hover .card__label {
+    color: #000;
   }
   .card__header {
     font-size: 24px;
@@ -384,6 +429,17 @@ body, html {
     padding-top: 32px;
     width: 32px;
   }
+  .card__img-container {
+    max-width: 100%;
+  }
+  .card__column_first {
+    order: 2;
+    padding: 0;
+  }
+  .card__column_second {
+    order: 1;
+    margin-bottom: 24px;
+  }
   .card__tag {
     font-size: 14px;
   }
@@ -392,6 +448,13 @@ body, html {
   }
   .form__button {
     font-size: 18px;
+  }
+  .download:hover .download__text {
+    color: #000;
+  }
+  .download:hover .download__icon {
+    fill: #000;
+    stroke: #000;
   }
 }
 @media screen and (max-width: 769px) and (min-width: 519px) {
@@ -409,7 +472,7 @@ body, html {
     border-right: 11px solid #000;
   }
 }
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 519px) {
   .tooltip {
     right: auto;
     left: 0;
@@ -422,19 +485,6 @@ body, html {
   }
   .tooltip::after {
     transform: translate(-150%, 100%);
-  }
-}
-@media screen and (max-width: 361px) {
-  .card__column_first {
-    order: 2;
-    padding: 0;
-  }
-  .card__column_second {
-    order: 1;
-    margin-bottom: 24px;
-  }
-  .card__img-container {
-    max-width: 100%;
   }
 }
 @media screen and (max-width: 999px) and (min-width: 319px) {

@@ -453,8 +453,11 @@ body, html {
     color: #000;
   }
   .download:hover .download__icon {
-    fill: #000;
+    fill: #fff;
     stroke: #000;
+  }
+  .download__text {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 769px) and (min-width: 519px) {

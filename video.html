@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="video__content">
                     <div class="video__tabs">
-                        <a href="lk.html" class="video__tab">← все курсы</a>
+                        <a onclick="history.back()" class="video__tab">← назад</a>
                     </div>
                     <div class="video__block">
                         <p class="video__date">Запись от 30 ноября 2022</p>
@@ -62,7 +62,25 @@
                     <div class="video__block">
                         <h2 class="video__title">Доп. материалы</h2>
                         <div class="video__row download">
-                        <p class="video__download_text download__text">презентация</p>
+                            <p class="video__download_text download__text">презентация</p>
+                            <a href="#" >
+                                <svg class="video__download download__icon">
+                                    <use xlink:href="#download"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <hr class="video__line">
+                        <div class="video__row download">
+                            <p class="video__download_text download__text">саммари</p>
+                            <a href="#" >
+                                <svg class="video__download download__icon">
+                                    <use xlink:href="#download"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <hr class="video__line">
+                        <div class="video__row download">
+                            <p class="video__download_text download__text">словарь</p>
                             <a href="#" >
                                 <svg class="video__download download__icon">
                                     <use xlink:href="#download"></use>

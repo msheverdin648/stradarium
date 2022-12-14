@@ -1,11 +1,12 @@
 
 // Open tooltip listener
-const questionButtons = document.querySelectorAll('._question span')
+const questionButtons = document.querySelectorAll('._question')
 questionButtons.forEach(el => {
     el.addEventListener('click', e => {
         e.preventDefault()
         e.stopPropagation()
-        e.target.nextElementSibling.classList.add('active')
+        console.log(e.target.children[1])
+        e.target.children[1].classList.add('active')
     })
 })
 

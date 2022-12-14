@@ -152,6 +152,7 @@
 @media screen and (max-width: 769px) {
   .program__button._main {
     font-size: 18px;
+    padding: 20px 24px;
   }
 }
 .program__button._secondary {
@@ -186,6 +187,9 @@
 }
 
 @media screen and (max-width: 769px) {
+  .schedule__card {
+    flex-direction: column;
+  }
   .schedule__title {
     font-size: 32px;
   }
@@ -209,6 +213,7 @@
     font-size: 14px;
   }
   .program__card {
+    flex-direction: column;
     align-items: flex-start;
   }
   .program__date {

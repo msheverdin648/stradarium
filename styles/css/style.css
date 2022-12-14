@@ -94,6 +94,11 @@ body, html {
 .form__input.disabled::-webkit-input-placeholder {
   color: #E8E8E8;
 }
+@media screen and (max-width: 769px) {
+  .form__input {
+    padding: 20px 24px;
+  }
+}
 .form__row {
   display: block;
   margin-bottom: 4px;
@@ -108,7 +113,7 @@ body, html {
   line-height: 120%;
   color: #FF5841;
   padding-left: 49px;
-  margin-top: 9px;
+  margin-top: 4px;
 }
 .form__label {
   display: block;
@@ -148,6 +153,7 @@ body, html {
 @media screen and (max-width: 769px) {
   .form__button {
     font-size: 18px;
+    padding: 20px 24px;
   }
 }
 .form__description {
@@ -383,6 +389,7 @@ body, html {
 .download {
   display: flex;
   align-items: center;
+  padding: 8px 0;
 }
 .download:hover .download__text {
   color: #8D8D8D;
@@ -409,9 +416,6 @@ body, html {
 }
 
 @media screen and (max-width: 769px) {
-  .card {
-    flex-direction: column;
-  }
   .card:hover .card__header,
 .card:hover .card__label {
     color: #000;
@@ -429,17 +433,6 @@ body, html {
     padding-top: 32px;
     width: 32px;
   }
-  .card__img-container {
-    max-width: 100%;
-  }
-  .card__column_first {
-    order: 2;
-    padding: 0;
-  }
-  .card__column_second {
-    order: 1;
-    margin-bottom: 24px;
-  }
   .card__tag {
     font-size: 14px;
   }
@@ -448,6 +441,9 @@ body, html {
   }
   .form__button {
     font-size: 18px;
+  }
+  .form__error {
+    padding-left: 24px;
   }
   .download:hover .download__text {
     color: #000;
@@ -488,6 +484,21 @@ body, html {
   }
   .tooltip::after {
     transform: translate(-150%, 100%);
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card__img-container {
+    max-width: 100%;
+    height: 200px;
+  }
+  .card__column_first {
+    order: 2;
+    padding: 0;
+  }
+  .card__column_second {
+    order: 1;
+    margin-bottom: 24px;
   }
 }
 @media screen and (max-width: 999px) and (min-width: 319px) {

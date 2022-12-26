@@ -98,7 +98,7 @@
   display: flex;
 }
 .profile__img {
-  min-width: 80%;
+  max-width: 80%;
 }
 .profile__img_768, .profile__img_360 {
   display: none;

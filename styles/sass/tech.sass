@@ -6,27 +6,22 @@
     background-size: 50% 
     background-position: 100% 0
 
-.profile
+.tech
     padding-top: 122px
     padding-bottom: 60px
-    
+    &__link
+        +link
     &__content
     &__title
         +title
-        margin-bottom: 24px
+        margin-bottom: 48px
+        max-width: 434px
     &__text
         +stratos_reg
-        font-size: 40px
+        font-size: 24px
         line-height: 120%
         margin-bottom: 48px
-    &__link
-        +link
-    &__tabs
-        display: flex
-        flex-wrap: wrap
-        margin-bottom: 32px
-    &__tab
-        +tab
+        max-width: 434px
     &__column
         &_first
             flex: 1 1 50%
@@ -34,26 +29,25 @@
             flex: 1 1 50%
             display: flex
             flex-direction: column
-            align-items: flex-end
+            align-items: flex-start
     &__body
         display: flex
     &__img
         min-width: 80%
+        transform: translate(-10%, -10%)
         &_768,
         &_360
             display: none
-    
-
 
 
 @media screen and (max-width: 1010px)
 
     .page
-        background: url('../../img/profile-img-768.png') center no-repeat
-        background-size: 100% 78vw
-        background-position: 0% 90%
+        background: url('../../img/tech-img-768.png') center no-repeat
+        background-size: 100% 74vw
+        background-position: 0% 75%
 
-    .profile
+    .tech
         &__body
             flex-direction: column
         &__column
@@ -63,23 +57,43 @@
                 align-items: normal
         &__img
             display: block
+            height: 74vw
             opacity: 0
             z-index: -1
                 
 @media screen and ( max-width:  769px)
 
 
-    .profile
+    .tech
         &__title
             font-size: 46px
             margin-bottom: 32px
         &__text
-            font-size: 24px
+            font-size: 18px
             margin-bottom: 32px
+
+        &__link
+            font-size: 18px
         &__tab
             font-size: 14px
     
-  
+@media screen and ( max-width:  679px)
+
+    .tech
+        &__img
+    
+@media screen and ( max-width:  512px)
+
+
+    .tech
+        &__img
+
+
+@media screen and ( max-width:  480px)
+
+@media screen and ( max-width: 376px )
+
+
     
     
 

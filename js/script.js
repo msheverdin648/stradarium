@@ -35,3 +35,5 @@ button.addEventListener('click', e => {
     e.preventDefault()
     location.href = '/lk.html'
 })
+
+

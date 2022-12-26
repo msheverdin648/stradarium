@@ -390,6 +390,8 @@ body, html {
   display: flex;
   align-items: center;
   padding: 8px 0;
+  cursor: pointer;
+  text-decoration: none;
 }
 .download:hover .download__text {
   color: #8D8D8D;
@@ -436,20 +438,31 @@ body, html {
   .card__tag {
     font-size: 14px;
   }
+  .card__img {
+    -o-object-position: top;
+       object-position: top;
+  }
   .form__input {
     font-size: 18px;
   }
+  .form__input:focus {
+    padding-left: 24px;
+  }
   .form__button {
     font-size: 18px;
+    margin-top: 24px;
   }
   .form__error {
     padding-left: 24px;
+  }
+  .form__label {
+    left: 26px;
   }
   .download:hover .download__text {
     color: #000;
   }
   .download:hover .download__icon {
-    fill: #fff;
+    fill: #000;
     stroke: #000;
   }
   .download__text {

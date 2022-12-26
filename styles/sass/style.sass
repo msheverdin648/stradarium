@@ -256,6 +256,8 @@ body, html
     display: flex
     align-items: center
     padding: 8px 0
+    cursor: pointer
+    text-decoration: none
     &:hover
         .download__text
             color: #8D8D8D
@@ -295,21 +297,28 @@ body, html
                 width: 32px
         &__tag
             font-size: 14px
+        &__img
+            object-position: top
 
     .form
         &__input
             font-size: 18px
+            &:focus
+                padding-left: 24px
         &__button
             font-size: 18px
+            margin-top: 24px
         &__error
             padding-left: 24px
+        &__label
+            left: 26px
 
     .download
         &:hover
             .download__text
                 color: #000
             .download__icon
-                fill: #fff
+                fill: #000
                 stroke: #000
         &__text
             font-size: 18px

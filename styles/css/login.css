@@ -1,6 +1,7 @@
 .page {
-  background: url("../../img/login-img.png") center no-repeat;
-  background-size: auto 100%;
+  background: url("../../img/line.png");
+  background-repeat: repeat-y;
+  background-size: 50%;
   background-position: 100% 0;
 }
 
@@ -16,11 +17,20 @@
   display: flex;
   flex-direction: column;
 }
+.login__column_first {
+  flex: 1 1 50%;
+}
 .login__column_second {
-  position: relative;
-  flex: 0 0 48.54%;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .login__img {
+  min-width: 80%;
+  transform: translate(-7%, -10%);
+}
+.login__img_768, .login__img_360 {
   display: none;
 }
 .login__title {
@@ -80,27 +90,16 @@
     max-width: 490px;
   }
 }
-@media screen and (min-width: 1000px) and (max-width: 1160px) {
-  .page {
-    background: url("../../img/login-img-1024.png") center no-repeat;
-    background-position: 100% 0;
-    background-size: 50% 100%;
-  }
-}
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1160px) {
   .page {
     background: url("../../img/login-img-mob.png") center no-repeat;
-    background-position: 0% 90%;
-    background-size: 100% 658px;
+    background-size: 100% 85vw;
+    background-position: 0% 83%;
   }
-}
-@media screen and (max-width: 1010px) {
-  .page {
-    background: url("../../img/login-img-mob.png") center no-repeat;
-    background-size: 100% 661px;
-    background-position: 0% 90%;
+  .login__form {
+    margin-bottom: 24px;
   }
-  .login__body {
+  .login__content {
     flex-direction: column;
   }
   .login__column_first {
@@ -110,18 +109,18 @@
     align-items: normal;
   }
   .login__img {
+    transform: translate(0, 0);
     display: block;
     opacity: 0;
     z-index: -1;
   }
-  .login__content {
-    flex-direction: column;
-  }
   .login__title {
     font-size: 46px;
+    margin-bottom: 32px;
   }
   .login__text {
     font-size: 24px;
+    margin: -16px 0 32px 0;
   }
   .login__tab {
     font-size: 14px;
@@ -133,29 +132,9 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 769px) {
-  .page {
-    background-size: 100% 648px;
-  }
-}
-@media screen and (max-width: 679px) {
-  .page {
-    background-size: 100% 501px;
-  }
-}
-@media screen and (max-width: 512px) {
-  .page {
-    background-size: 100% 400px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .page {
-    background-size: 100% 365px;
-  }
-}
-@media screen and (max-width: 376px) {
-  .page {
-    background-size: 100% 320px;
+@media screen and (max-width: 371px) {
+  .login {
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 350px) {

@@ -122,7 +122,9 @@
   cursor: default;
 }
 .program__line {
-  border: 1px solid #000;
+  border: none;
+  height: 1px;
+  background: #000;
 }
 .program__button {
   cursor: pointer;
@@ -186,7 +188,7 @@
   display: none;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1023px) {
   .schedule__card {
     flex-direction: column;
   }
@@ -239,13 +241,23 @@
   .schedule__button {
     margin-bottom: 2px;
   }
+  .schedule__img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .schedule__img-container {
+    min-width: 100%;
+    height: 200px;
+  }
 }
 @media screen and (max-width: 321px) {
   .schedule__autor {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 999px) and (min-width: 319px) {
+@media screen and (max-width: 1023px) and (min-width: 319px) {
   .form {
     max-width: 100%;
   }
